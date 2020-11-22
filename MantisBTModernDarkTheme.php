@@ -47,13 +47,13 @@ extends MantisPlugin
 					'<label for="DarkModeSwitch">Dark Mode</label>' .
 				 '</td>' .
 				 '<td>' .
-					 '<input id="DarkModeSwitch" type="checkbox" name="' . CFG_ENABLED . '" value="1" ' . ( $this->is_enabled() ? 'checked' : '' ) . '/>' .
+					 '<input id="DarkModeSwitch" type="checkbox" name="' . self::CFG_ENABLED . '" value="1" ' . ( $this->is_enabled() ? 'checked' : '' ) . '/>' .
 				 '</td>' .
 			 '</tr>';
 	}
 
 	function account_update( $p_event, $p_user_id )
 	{
-		config_set( self::CFG_ENABLED, gpc_get_bool( CFG_ENABLED, false ), $p_user_id, ALL_PROJECTS );
+		config_set( self::CFG_ENABLED, gpc_get_bool( self::CFG_ENABLED, false ), $p_user_id, ALL_PROJECTS );
 	}
 }
