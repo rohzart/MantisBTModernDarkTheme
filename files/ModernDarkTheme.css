@@ -78,6 +78,10 @@ html {
   background-color: var(--c-transparent) !important;
 }
 
+.menu-min .menu-text {
+  background-color: var(--c-dark) !important;
+}
+
 .dropdown-menu a {
   color: var(--c-accent-3) !important;
 }
@@ -467,20 +471,20 @@ span.required {
 
 .bootstrap-datetimepicker-widget,
 .bootstrap-datetimepicker-widget * {
-  background-color: var(--c-transparent) !important;
+  background-color: var(--c-dark) !important;
   color: var(--c-accent-2) !important;
 }
 
 .bootstrap-datetimepicker-widget td.day:hover,
 .bootstrap-datetimepicker-widget span.month:hover,
 .bootstrap-datetimepicker-widget span.year:hover {
-  background-color: --c-transparent !important;
+  background-color: var(--c-grey) !important;
 }
 
 .bootstrap-datetimepicker-widget td.day.active,
 .bootstrap-datetimepicker-widget span.month.active,
 .bootstrap-datetimepicker-widget span.year.active {
-  background-color: var(--c-transparent) 4 !important;
+  background-color: var(--c-grey) 4 !important;
 }
 
 .widget-color-blue2 > .widget-header {
