@@ -1,0 +1,718 @@
+:root {
+    --c-accent: hsl(180, 50%, 50%);
+    --c-accent-2: hsl(210, 50%, 50%);
+    --c-accent-3: hsl(190, 50%, 50%);
+    --c-transparent: transparent;
+    --c-semi-transparent: hsla(0, 0%, 0%, 0.1);
+    --c-red: #bb0000;
+    --c-blue: #4c8fbd;
+    --c-blue-2: #babaff;
+    --c-black: #000;
+    --c-grey: hsla(210, 50%, 50%, 0.1);
+    --c-dark: #222;
+}
+
+body,
+html {
+    background-color: var(--c-dark) !important;
+    background-image: linear-gradient(45deg, hsl(0, 0, 0), hsl(180, 50%, 20%));
+    background-attachment: fixed;
+    color: var(--c-accent-3) !important;
+}
+
+.navbar {
+    background-color: var(--c-dark) !important;
+
+    .navbar-brand {
+        color: var(--c-accent-2) !important;
+    }
+}
+
+.nav-tabs {
+    border-bottom: 0 solid var(--c-dark) !important;
+
+    &>li {
+        &.active {
+            &>a {
+                border-top: 2px solid var(--c-accent) !important;
+                border-color: var(--c-transparent) !important;
+            }
+        }
+
+        &>a {
+            border: 1px solid var(--c-transparent);
+            border-radius: 4px 4px 0 0;
+
+            &:hover {
+                background-color: var(--c-accent-2);
+                color: var(--c-blue);
+                border-color: var(--c-transparent);
+            }
+        }
+    }
+
+    a {
+        background-color: var(--c-transparent) !important;
+        color: var(--c-accent-2) !important;
+
+        &:hover {
+            background-color: var(--c-transparent) !important;
+            color: var(--c-accent-3) !important;
+        }
+    }
+}
+
+.nav-list:hover,
+.skin-3 .nav-list>li:hover,
+.skin-3 .nav-list>li>a:hover,
+.skin-3 .nav-list>li.active>a:hover,
+.skin-3 .nav-list>li.active,
+.skin-3 .nav-list>li.active+li {
+    border-color: var(--c-dark) !important;
+}
+
+.dropdown-toggle {
+    background-color: var(--c-dark) !important;
+
+    &:hover {
+        background-color: var(--c-grey) !important;
+    }
+}
+
+.dropdown-menu,
+.skin-3 .infobox-container .infobox:not(.infobox-dark){
+    background-color: var(--c-dark) !important;
+}
+.skin-3 .nav-list li.active>a::before,
+.menu-text{
+    background-color: var(--c-transparent) !important;
+}
+
+.dropdown-menu {
+    a {
+        color: var(--c-accent-3) !important;
+    }
+
+    .search {
+        background-color: var(--c-transparent) !important;
+        color: var(--c-accent-3) !important;
+    }
+}
+
+.dropdown-menu li.active:hover>a,
+.dropdown-menu li.active>a,
+.dropdown-menu li:hover>a,
+.dropdown-menu li>a:active,
+.dropdown-menu li>a:focus {
+    background-color: var(--c-grey) !important;
+    color: var(--c-accent-3) !important;
+}
+
+.ace-nav {
+    &>li {
+        border-left: 0 solid var(--c-accent-3) !important;
+
+        &.grey {
+            &>a {
+                color: var(--c-accent-2) !important;
+            }
+        }
+
+        &>a {
+            &>.ace-icon {
+                color: var(--c-accent-2) !important;
+            }
+        }
+    }
+}
+
+.btn.btn-white,
+.btn-primary,
+.btn.btn-white.btn-primary {
+    background-color: var(--c-grey) !important;
+    border: 0 var(--c-transparent) !important;
+    color: var(--c-accent-3) !important;
+    padding: 3px 12px !important;
+}
+
+.btn.btn-white.active,
+.btn-primary.active,
+.btn.btn-white.btn-primary.active,
+.btn.btn-white:hover,
+.btn-primary:hover,
+.btn.btn-white.btn-primary:hover {
+    background-color: var(--c-transparent) !important;
+}
+
+.btn-primary.no-hover:active,
+.btn-primary.no-hover:hover {
+    background-color: var(--c-transparent) !important;
+}
+
+.skin-3 .nav-list>li>a:hover,
+.skin-3 .nav-list>li.active>a:hover {
+    border-color: var(--c-transparent) !important;
+}
+
+.main-content,
+.page-content,
+.main-container,
+.main-container:before,
+.main-container.container:before,
+.skin-3 .main-container:before {
+    background: var(--c-transparent) !important;
+}
+
+.footer {
+    color: var(--c-accent-3);
+}
+
+.footer-content {
+    background-color: var(--c-transparent)4 !important;
+    border-top: 1px dotted var(--c-accent) !important;
+}
+
+.label {
+    background-color: var(--c-accent) !important;
+    color: var(--c-accent-2);
+    padding: 3px 10px;
+
+    &:before {
+        border-right-color: var(--c-accent) !important;
+    }
+
+    &.arrowed-in-right {
+        &:after {
+            border-color: var(--c-accent) !important;
+            border-right-color: var(--c-transparent) !important;
+        }
+    }
+
+    &.arrowed {
+        border-radius: 0 18px 18px 0;
+    }
+}
+
+.breadcrumbs {
+    border-radius: 0 !important;
+    background-color: var(--c-transparent) !important;
+    padding: 10px !important;
+
+    .nav-recent {
+        color: var(--c-accent) !important;
+    }
+
+    .nav-search-input {
+        background-color: var(--c-grey) !important;
+        border-color: var(--c-transparent) !important;
+        color: var(--c-accent-3) !important;
+        border-radius: 18px !important;
+    }
+}
+
+.breadcrumbs a,
+.breadcrumb>li,
+.breadcrumb>li.active,
+.breadcrumbs .nav-search-icon {
+    color: var(--c-accent-2) !important;
+}
+
+.widget-header {
+    background-color: var(--c-grey) !important;
+    border-color: var(--c-grey) !important;
+
+    .white {
+        &:hover {
+            color: var(--c-transparent) !important;
+            text-decoration: underline;
+            color: var(--c-accent-2) !important;
+        }
+    }
+
+    .badge {
+        background-color: var(--c-grey) !important;
+    }
+}
+
+[class*=widget-color-]>.widget-body .table thead:first-child tr {
+    background: none !important;
+}
+
+.widget-box,
+.widget-main {
+    background-color: var(--c-semi-transparent) !important;
+    border: 0 var(--c-transparent) !important;
+}
+
+table,
+.table {
+    background-color: var(--c-transparent) !important;
+}
+
+.table-bordered {
+    border: 0 var(--c-transparent) !important;
+    background-color: var(--c-accent-2) !important;
+}
+
+.widget-body {
+    background-color: var(--c-transparent) !important;
+    color: var(--c-accent-2) !important;
+
+    .table {
+        background-color: var(--c-transparent) !important;
+        color: var(--c-accent-2) !important;
+        border: 0 var(--c-accent-2) !important;
+
+        a {
+            color: var(--c-accent) !important;
+            font-weight: bold;
+
+            &.tagi-brighter {
+                color: var(var(--c-blue)-2) !important;
+                font-weight: bold;
+            }
+
+            &.btn {
+                color: var(--c-accent-3) !important;
+            }
+        }
+
+        th {
+            background-color: var(--c-transparent) !important;
+            color: var(--c-accent-2) !important;
+            border: 0 var(--c-accent-2) !important;
+        }
+
+        thead {
+            background-color: var(--c-grey) !important;
+
+            tr {
+                background-color: inherit !important;
+
+                td {
+                    background-color: var(--c-transparent) !important;
+                    border-bottom: 1px solid var(--c-transparent) !important;
+                    color: var(--c-accent-2) !important;
+                }
+            }
+        }
+    }
+
+    .table-striped {
+        &>tbody {
+            &>tr {
+                background-color: var(--c-transparent) !important;
+
+                &:nth-of-type(odd) {
+                    background-color: var(--c-transparent) !important;
+                }
+
+                &:hover {
+                    background-color: var(--c-grey) !important;
+                }
+            }
+        }
+    }
+
+    .fa-pencil {
+        color: var(--c-accent-3) !important;
+    }
+
+    .table-responsive {
+        background-color: var(--c-transparent) !important;
+        color: var(--c-grey) !important;
+    }
+
+    .profile-activity {
+        border-color: var(--c-transparent) !important;
+    }
+}
+
+.table-bordered>tbody>tr>td,
+.widget-body .table td {
+    border: 1px solid var(--c-transparent) !important;
+}
+
+.buglist-headers {
+    border-bottom: 1px solid silver !important;
+}
+
+.profile-activity {
+    &:nth-of-type(even) {
+        background-color: var(--c-transparent)1 !important;
+    }
+
+    &:nth-of-type(odd):hover {
+        background-color: var(--c-transparent)2 !important;
+    }
+
+    &:hover {
+        background-color: var(--c-transparent)3 !important;
+    }
+
+    .thumbicon {
+        border-radius: 100% !important;
+    }
+}
+
+.widget-toolbox {
+    background-color: var(--c-transparent) !important;
+    border: 0 var(--c-transparent) !important;
+
+    &.padding-8 {
+        padding: 8px 17px;
+    }
+}
+
+.table-hover {
+    &>tbody {
+        &>tr {
+            &.spacer {
+                &:hover {
+                    background-color: var(--c-accent-3) !important;
+                }
+            }
+        }
+    }
+}
+
+.btn-toolbar {
+    padding: 10px 0 !important;
+    background-color: var(--c-transparent) !important;
+}
+
+.form-inline {
+    .input-sm {
+        background-color: var(--c-transparent) !important;
+        border-color: --c-transparent !important;
+        color: var(--c-accent-3) !important;
+    }
+}
+
+select {
+    background-color: var(--c-grey) !important;
+    color: var(--c-accent-3) !important;
+}
+
+.skin-3 {
+    .sidebar {
+        background-color: var(--c-semi-transparent) !important;
+        border-color: var(--c-transparent) !important;
+        border-width: 0 0 0 0 !important;
+
+        &.menu-min {
+            .nav-list {
+                &>li {
+                    &>a {
+                        &>.menu-text {
+                            border-color: var(--c-grey) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-list {
+        &>li {
+            &:hover {
+                &+li {
+                    border-top-color: --c-black !important;
+                }
+            }
+        }
+    }
+
+    .breadcrumbs {
+        margin: 20px;
+    }
+}
+
+.nav-list,
+.skin-3 .nav-list>li,
+.skin-3 .nav-list>li>a,
+.skin-3 .nav-list>li.active>a {
+    background-color: inherit !important;
+    border-color: var(--c-transparent) !important;
+}
+
+.nav-list:hover,
+.skin-3 .nav-list>li:hover,
+.skin-3 .nav-list>li>a:hover,
+.skin-3 .nav-list>li.active>a:hover {
+    border-color: var(--c-grey) !important;
+}
+
+.nav-list a:hover,
+.skin-3 .nav-list>li a:hover,
+.skin-3 .nav-list>li>a a:hover,
+.skin-3 .nav-list>li.active>a a:hover {
+    background-color: var(--c-accent-3) !important;
+    border-color: var(--c-accent-3) !important;
+    color: var(--c-accent-2);
+}
+
+.nav-list a:hover .menu-text,
+.nav-list a:hover .menu-icon {
+    color: var(--c-accent) !important;
+}
+
+.nav-list li.active>a:before,
+.skin-3 .nav-list>li li.active>a:before,
+.skin-3 .nav-list>li>a li.active>a:before,
+.skin-3 .nav-list>li.active>a li.active>a:before {
+    color: rgba(0, 0, 0, 0) !important;
+    border-right-color: var(--c-accent) !important;
+}
+
+.nav-list>li:before,
+.nav-list>li:after,
+.skin-3 .nav-list>li>li:before,
+.skin-3 .nav-list>li>li:after,
+.skin-3 .nav-list>li>a>li:before,
+.skin-3 .nav-list>li>a>li:after,
+.skin-3 .nav-list>li.active>a>li:before,
+.skin-3 .nav-list>li.active>a>li:after,
+.skin-3 .nav-list>li.open:before,
+.skin-3 .nav-list>li:hover:before,
+.skin-3 .nav-list>li.active:before,
+.skin-3 .nav-list>li.active+li:before {
+    background-color: var(--c-accent) !important;
+}
+
+.skin-3 .nav-list>li.active,
+.skin-3 .nav-list>li.active+li {
+    border-color: var(--c-transparent) !important;
+}
+
+.menu-icon {
+    color: var(--c-grey) !important;
+}
+
+.arrow {
+    z-index: -1;
+    background-color: var(--c-transparent) !important;
+
+    &::after {
+        border-right-color: var(--c-accent) !important;
+    }
+}
+
+.menu-text {
+    color: var(--c-accent-2) !important;
+}
+
+.sidebar-toggle,
+.skin-3 .sidebar-toggle {
+    background-color: inherit !important;
+    border-color: --c-transparent !important;
+    color: var(--c-accent) !important;
+    border-bottom: 0 !important;
+    padding: 20px 0 !important;
+}
+
+.sidebar-toggle>.ace-icon,
+.skin-3 .sidebar-toggle>.ace-icon {
+    background-color: var(--c-transparent) !important;
+    border-color: var(--c-accent) !important;
+    color: var(--c-accent) !important;
+}
+
+.sidebar-toggle:before,
+.skin-3 .sidebar-toggle:before {
+    border-color: inherit !important;
+}
+
+.well {
+    background-color: var(--c-grey) !important;
+    color: var(--c-accent-2);
+}
+
+.color-global {
+    background-color: var(--c-grey);
+}
+
+tr {
+    &.spacer {
+        background-color: var(--c-transparent) !important;
+    }
+}
+
+td.category,
+tr.bugnote .bugnote-note {
+    background-color: var(--c-transparent) !important;
+    color: var(--c-accent-3) !important;
+}
+
+td.bug-tags,
+label.inline.small {
+    color: var(--c-accent-3);
+}
+
+span {
+    &.required {
+        color: #bb0000 !important;
+    }
+}
+
+.bootstrap-datetimepicker-widget,
+.bootstrap-datetimepicker-widget * {
+    background-color: var(--c-transparent) !important;
+    color: var(--c-accent-2) !important;
+}
+
+.bootstrap-datetimepicker-widget td.day:hover,
+.bootstrap-datetimepicker-widget span.month:hover,
+.bootstrap-datetimepicker-widget span.year:hover {
+    background-color: --c-transparent !important;
+}
+
+.bootstrap-datetimepicker-widget td.day.active,
+.bootstrap-datetimepicker-widget span.month.active,
+.bootstrap-datetimepicker-widget span.year.active {
+    background-color: var(--c-transparent)4 !important;
+}
+
+.widget-color-blue2 {
+    &>.widget-header {
+        border: 0 !important;
+        background-color: var(--c-transparent) !important;
+        color: var(--c-accent-2) !important;
+        border-bottom: 1px solid var(--c-transparent) !important;
+    }
+}
+
+[class*="widget-color-"] {
+    &>.widget-header {
+        &>.widget-toolbar {
+            &::before {
+                border-color: var(--c-transparent) !important;
+            }
+        }
+    }
+}
+
+.sidebar-toggle::before,
+.skin-3 .sidebar-toggle::before {
+    border-color: var(--c-transparent) !important;
+}
+
+.nav-list {
+    &>li {
+        &.active {
+            &>a {
+                font-weight: inherit !important;
+            }
+        }
+    }
+}
+
+a {
+    color: var(--c-accent) !important;
+
+    i {
+        color: var(--c-accent-3) !important;
+    }
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    background-color: var(--c-transparent) !important;
+    color: var(--c-accent-2) !important;
+}
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:focus {
+    border-radius: 0 !important;
+    border-color: var(--c-transparent);
+    background-color: var(--c-accent-3);
+    color: var(--c-grey);
+    margin-right: -1px;
+    line-height: 18px;
+    position: relative;
+}
+
+.form-control,
+.input-sm,
+input,
+.form-inline .input-sm,
+textarea.form-control,
+input.form-control,
+select.input-xs,
+input.tt-hint, .form-group input.tt-hint,
+.dropzone {
+    background-color: var(--c-transparent) !important;
+    color: var(--c-accent-2) !important;
+    border: 1px solid var(--c-grey) !important;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+.small-caption {
+    font-size: 9pt;
+}
+
+.lead {
+    font-size: 1.1em;
+}
+
+.white {
+    color: var(--c-accent-2) !important;
+}
+
+.widget-title {
+    .badge {
+        margin: 0 0 0 10px !important;
+    }
+}
+
+.skin-3 .nav-list>li.active.highlight>a,
+.skin-3 .nav-list>li.active>a,
+.sidebar.compact .nav-list>li>a:hover {
+    background-color: var(--c-transparent) !important;
+    border-color: var(--c-transparent) !important;
+}
+
+.sidebar {
+    &.compact {
+        .nav-list {
+            &>li {
+                &>a {
+                    &>.menu-icon {
+                        color: var(--c-accent-2) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skin-3 .nav-list>li.open::before,
+.skin-3 .nav-list>li:hover::before,
+.skin-3 .nav-list li.active>a::before,
+.skin-3 .nav-list>li.active::before,
+.skin-3 .nav-list>li.active+li::before {
+    display: none;
+}
+
+.page-header {
+    h1 {
+        color: var(--c-grey);
+    }
+}
+
+.pager>li>a,
+.pagination>li>a {
+    background-color: var(--c-transparent) !important;
+    border-color: var(--c-grey) !important;
+}
+
+.pager>li.disabled>a,
+.pager>li.disabled>a:hover,
+.pagination>li.disabled>a,
+.pagination>li.disabled>a:hover {
+    color: var(--c-grey) !important;
+}

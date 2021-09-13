@@ -32,7 +32,7 @@ extends MantisPlugin
 	function add_css( $p_event )
 	{
 		if( $this->is_enabled() )
-			echo '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'ModernDarkTheme.css' ) . '" />' . "\n";
+			echo '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'ModernDarkTheme.min.css' ) . '" />' . "\n";
 	}
 
 	function is_enabled()
