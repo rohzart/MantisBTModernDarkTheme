@@ -1,3 +1,10 @@
+# todo
+
+* Add screenshots
+* CSS tasks:
+    * selected light theme colors
+    * implement "prefers-color-scheme" media (Enable 'dark mode' could read as 'Enable theme')
+
 # Mantis Bugtracker Modern Dark Theme
 
 ![MantisBTModernDarkTheme Screenshot](files/MantisBTModernDarkTheme_Screenshot.png)
