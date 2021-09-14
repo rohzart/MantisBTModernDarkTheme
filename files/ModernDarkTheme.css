@@ -20,6 +20,36 @@ html {
   color: var(--c-accent-3) !important;
 }
 
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=checkbox].ace:checked,
+input[type=checkbox].ace:focus,
+input[type=radio].ace:checked,
+input[type=radio].ace:focus,
+input[type=checkbox].ace:focus + .lbl::before,
+input[type=radio].ace:focus + .lbl::before,
+textarea:focus,
+select:focus,
+.ace-nav > li.grey > a:focus,
+.ace-nav > li.grey > a:hover,
+.ace-nav > li.open.grey > a,
+.skin-3 .nav-list > li > a:focus,
+.form-control:focus {
+  outline: solid 1px var(--c-accent);
+}
+
 .navbar {
   background-color: var(--c-dark) !important;
 }
@@ -540,7 +570,8 @@ input,
 textarea.form-control,
 input.form-control,
 select.input-xs,
-input.tt-hint, .form-group input.tt-hint,
+input.tt-hint,
+.form-group input.tt-hint,
 .dropzone {
   background-color: var(--c-transparent) !important;
   color: var(--c-accent-2) !important;
