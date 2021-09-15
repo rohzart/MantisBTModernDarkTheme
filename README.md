@@ -1,13 +1,15 @@
 # todo
 
-* Add screenshots
-* ~~ CSS tasks: ~~
+* <strike>Add screenshots </strike>
+* <strike> CSS tasks: 
     * ~~ selected light theme colors ~~
-    * ~~ implement "prefers-color-scheme" media (Enable 'dark mode' could read as 'Enable theme') ~~
+    * ~~ implement "prefers-color-scheme" media (Enable 'dark mode' could read as 'Enable theme') </strike>
 
 # Mantis Bugtracker Modern Dark Theme
 
-![MantisBTModernDarkTheme Screenshot](files/MantisBTModernDarkTheme_Screenshot.png)
+![MantisBTModernDarkTheme Screenshot](files/LightScheme.png)
+
+![MantisBTModernDarkTheme Screenshot](files/DarkScheme.png)
 
 ## About
 

@@ -44,7 +44,7 @@ extends MantisPlugin
 	{
 		echo '<tr>' .
 				 '<td class="category">' .
-					'<label for="DarkModeSwitch">Dark Mode</label>' .
+					'<label for="DarkModeSwitch">Enable Theme</label>' .
 				 '</td>' .
 				 '<td>' .
 					 '<input id="DarkModeSwitch" type="checkbox" name="' . self::CFG_ENABLED . '" value="1" ' . ( $this->is_enabled() ? 'checked' : '' ) . '/>' .
