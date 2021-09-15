@@ -1,21 +1,43 @@
-:root {
-    --c-accent: hsl(180, 50%, 50%);
-    --c-accent-2: hsl(210, 50%, 50%);
-    --c-accent-3: hsl(190, 50%, 50%);
-    --c-transparent: transparent;
-    --c-semi-transparent: hsla(0, 0%, 0%, 0.1);
-    --c-red: #bb0000;
-    --c-blue: #4c8fbd;
-    --c-blue-2: #babaff;
-    --c-black: #000;
-    --c-grey: hsla(210, 50%, 50%, 0.1);
-    --c-dark: #222;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --lightness: 50%;
+        --c-accent: hsl(180, 50%, var(--lightness));
+        --c-accent-2: hsl(210, 50%, var(--lightness));
+        --c-accent-3: hsl(190, 50%, var(--lightness));
+        --c-transparent: transparent;
+        --c-semi-transparent: hsla(0, 0%, 0%, 0.1);
+        --c-red: #bb0000;
+        --c-blue: #4c8fbd;
+        --c-blue-2: #babaff;
+        --c-grey: hsla(210, 50%, 50%, 0.1);
+        --c-dark: #222;
+        --c-black: #000;
+        --c-bg-img: linear-gradient(45deg, var(--c-black), hsl(180, 50%, 20%));
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --lightness: 30%;
+        --c-accent: hsl(180, 50%, var(--lightness));
+        --c-accent-2: hsl(210, 50%, var(--lightness));
+        --c-accent-3: hsl(190, 50%, var(--lightness));
+        --c-transparent: transparent;
+        --c-semi-transparent: hsla(0, 0%, 0%, 0.1);
+        --c-red: #bb0000;
+        --c-blue: #4c8fbd;
+        --c-blue-2: #babaff;
+        --c-grey: hsla(210, 50%, 50%, 0.2);
+        --c-dark: #fff;
+        --c-black: #fff;
+        --c-bg-img: none;
+    }
 }
 
 body,
 html {
     background-color: var(--c-dark) !important;
-    background-image: linear-gradient(45deg, hsl(0, 0, 0), hsl(180, 50%, 20%));
+    background-image: var(--c-bg-img);
     background-attachment: fixed;
     color: var(--c-accent-3) !important;
 }
