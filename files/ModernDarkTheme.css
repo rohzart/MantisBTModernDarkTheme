@@ -66,7 +66,9 @@ select:focus,
 .ace-nav > li.grey > a:hover,
 .ace-nav > li.open.grey > a,
 .skin-3 .nav-list > li > a:focus,
-.form-control:focus {
+.form-control:focus,
+[class*=widget-color-] > .widget-header > .widget-toolbar > .widget-menu > [data-action=collapse]:focus,
+[class*=widget-color-] > .widget-header > .widget-toolbar > [data-action=collapse]:focus {
   outline: solid 1px var(--c-accent);
 }
 
@@ -260,10 +262,14 @@ select:focus,
   background: none !important;
 }
 
-.widget-box,
 .widget-main {
+  background-color: var(--c-transparent) !important;
+}
+
+.widget-box {
   background-color: var(--c-semi-transparent) !important;
   border: 0 var(--c-transparent) !important;
+  padding: 0.5rem;
 }
 
 table,
