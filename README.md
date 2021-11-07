@@ -2,7 +2,7 @@
 
 MantisBT theme which switches between light and dark modes in the day and at night, respectively.
 
-# Screenshots
+## Screenshots
 
 ![mantisbtAutoSwitchTheme Screenshot](files/LightScheme.png)
 
@@ -14,6 +14,6 @@ Upload the whole folder into your `plugins/` folder in the mantis installation s
 
 Then each user can activate it from their Account > Preferences.
 
-# Credits
+## Credits
 
 forked from : https://github.com/wiz78/MantisBTModernDarkTheme
