@@ -1,22 +1,22 @@
 <?php
 
-class MantisBTModernDarkThemePlugin
+class mantisbtAutoSwitchThemePlugin
 extends MantisPlugin
 {
-	const CFG_ENABLED = 'plugin_MantisBTModernDarkTheme_enabled';
+	const CFG_ENABLED = 'plugin_mantisbtAutoSwitchTheme_enabled';
 
 	function register()
 	{
-		$this->name = 'MantisBT Modern Dark Theme';
-		$this->description = 'A clean and dark theme for MantisBT.';
+		$this->name = 'MantisBT Auto Switch Theme';
+		$this->description = 'MantisBT theme which switches between light and dark modes in the day and at night, respectively.';
 
 		$this->version = '2.0.0';
 		$this->requires = array(
 			'MantisCore' => '2.0.0',
 		);
 
-		$this->author = 'Simone Tellini';
-		$this->url = 'https://github.com/wiz78/MantisBTModernDarkTheme';
+		$this->author = '@rohzart';
+		$this->url = 'https://github.com/rohzart/mantisbtAutoSwitchTheme';
 	}
 
 	function hooks()
@@ -32,7 +32,7 @@ extends MantisPlugin
 	function add_css( $p_event )
 	{
 		if( $this->is_enabled() )
-			echo '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'ModernDarkTheme.min.css' ) . '" />' . "\n";
+			echo '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'styles.min.css' ) . '" />' . "\n";
 	}
 
 	function is_enabled()

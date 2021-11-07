@@ -1,38 +1,19 @@
-# todo
+# MantisBT Auto Switch Theme
 
-* <strike>Add screenshots </strike>
-* <strike> CSS tasks: 
-    * ~~ selected light theme colors ~~
-    * ~~ implement "prefers-color-scheme" media (Enable 'dark mode' could read as 'Enable theme') </strike>
+MantisBT theme which switches between light and dark modes in the day and at night, respectively.
 
 # Mantis Bugtracker Modern Dark Theme
 
-![MantisBTModernDarkTheme Screenshot](files/LightScheme.png)
+![mantisbtAutoSwitchTheme Screenshot](files/LightScheme.png)
 
-![MantisBTModernDarkTheme Screenshot](files/DarkScheme.png)
-
-## About
-
-I wanted a modern clean and dark theme for MantisBT. 
-
-Based on https://github.com/iKyzu/MantisBTModernDarkTheme
-
-Edited from https://github.com/polnetwork/MantisBTModernTheme
+![mantisbtAutoSwitchTheme Screenshot](files/DarkScheme.png)
 
 ## Installation
 
-Upload the whole folder into your `plugins/` folder in the mantis installation so that you e.g. have `MANTIS_INSTALLATION/plugins/MantisBTModernDarkTheme/MantisBTModernDarkTheme.php`. After that the plugin should show up on the `manage_plugin_page.php` page in the mantis settings. There you can simply install it to activate it.
+Upload the whole folder into your `plugins/` folder in the mantis installation so that you e.g. have `MANTIS_INSTALLATION/plugins/mantisbtAutoSwitchTheme/mantisbtAutoSwitchTheme.php`. After that the plugin should show up on the `manage_plugin_page.php` page in the mantis settings. There you can simply install it to activate it.
 
-I recommend you to set this colors inside your config/config_inc.php file
+Then each user can activate it from their Account > Preferences.
 
-```php
-$g_status_colors = array( 'new' => '#ffa0a0', # red,
-    'feedback' => '#ff50a8', # purple
-    'acknowledged' => '#ffd850', # orange
-    'confirmed' => '#ffffb0', # yellow
-    'assigned' => '#c8c8ff', # blue
-    'resolved' => '#cceedd', # buish-green
-    'closed' => '#e8e8e8'); # light gray
-```
+# Credits
 
-Each user can then enable the dark theme in Account -> Preferences
+forked from : https://github.com/wiz78/MantisBTModernDarkTheme
