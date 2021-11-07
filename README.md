@@ -2,7 +2,7 @@
 
 MantisBT theme which switches between light and dark modes in the day and at night, respectively.
 
-# Mantis Bugtracker Modern Dark Theme
+# Screenshots
 
 ![mantisbtAutoSwitchTheme Screenshot](files/LightScheme.png)
 
