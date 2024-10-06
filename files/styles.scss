@@ -605,6 +605,11 @@ tr {
     }
 }
 
+.table>thead>tr {
+    background-image: none;
+    background-color: var(--c-semi-transparent) !important;
+}
+
 td.category,
 th.category,
 td.category label,
