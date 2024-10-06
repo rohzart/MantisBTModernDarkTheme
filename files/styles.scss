@@ -73,7 +73,7 @@ select:focus,
 .ace-nav>li.open.grey>a,
 .skin-3 .nav-list>li>a:focus,
 .form-control:focus,
-[class*=widget-color-]>.widget-header>.widget-toolbar>.widget-menu>[data-action=collapse]:focus, 
+[class*=widget-color-]>.widget-header>.widget-toolbar>.widget-menu>[data-action=collapse]:focus,
 [class*=widget-color-]>.widget-header>.widget-toolbar>[data-action=collapse]:focus {
     outline: solid 1px var(--c-accent);
 }
@@ -301,7 +301,7 @@ select:focus,
     background: none !important;
 }
 
-.widget-main{
+.widget-main {
     background-color: var(--c-transparent) !important;
 }
 
