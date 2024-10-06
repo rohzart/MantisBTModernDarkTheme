@@ -606,6 +606,9 @@ tr {
 }
 
 td.category,
+th.category,
+td.category label,
+th.category label,
 tr.bugnote .bugnote-note {
     background-color: var(--c-transparent) !important;
     color: var(--c-accent-3) !important;

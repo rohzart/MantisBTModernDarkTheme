@@ -516,6 +516,9 @@ tr.spacer {
 }
 
 td.category,
+th.category,
+td.category label,
+th.category label,
 tr.bugnote .bugnote-note {
   background-color: var(--c-transparent) !important;
   color: var(--c-accent-3) !important;
@@ -663,3 +666,5 @@ input[type=file] {
 .pagination > li.disabled > a:hover {
   color: var(--c-grey) !important;
 }
+
+/*# sourceMappingURL=styles.css.map */
