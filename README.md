@@ -2,6 +2,20 @@
 
 MantisBT theme which switches between light and dark modes in the day and at night, respectively.
 
+## Compiling SASS
+
+to debug with
+
+```
+sass styles.scss styles.css
+```
+
+minified, without map
+
+```
+sass --style-compressed --sourcemap=none styles.scss styles.min.css
+```
+
 ## Screenshots
 
 ![mantisbtAutoSwitchTheme Screenshot](files/LightScheme.png)
