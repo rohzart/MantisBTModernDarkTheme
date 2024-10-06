@@ -10,9 +10,9 @@ extends MantisPlugin
 		$this->name = 'MantisBT Auto Switch Theme';
 		$this->description = 'MantisBT theme which switches between light and dark modes in the day and at night, respectively.';
 
-		$this->version = '2.0.0';
+		$this->version = MANTIS_VERSION;
 		$this->requires = array(
-			'MantisCore' => '2.0.0',
+			'MantisCore' => '2.25.0',
 		);
 
 		$this->author = '@rohzart';
