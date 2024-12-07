@@ -672,4 +672,11 @@ input[type=file] {
   color: var(--c-grey) !important;
 }
 
-/*# sourceMappingURL=styles.css.map */
+pre {
+  background-color: var(--c-black) !important;
+  border: 1px solid var(--c-dark) !important;
+}
+
+code {
+  color: var(--c-accent-2) !important;
+}/*# sourceMappingURL=styles.css.map */

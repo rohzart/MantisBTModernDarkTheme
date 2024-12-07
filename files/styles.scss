@@ -792,3 +792,12 @@ input[type="file"] {
 .pagination>li.disabled>a:hover {
     color: var(--c-grey) !important;
 }
+
+pre {
+    background-color: var(--c-black) !important;
+    border: 1px solid var(--c-dark) !important;
+}
+
+code {
+    color: var(--c-accent-2) !important;
+}
